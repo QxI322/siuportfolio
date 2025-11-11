@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Контактная страница портфолио Ивана Иванова. Отправьте сообщение или найдите ссылки на соцсети." />
+  <meta name="keywords" content="контакты, портфолио, обратная связь" />
+  <meta name="author" content="Иван Иванов" />
+  <title>Контакты | Моё портфолио</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="eagle.png" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Контакты</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Главная</a></li>
+          <li><a href="about.html" class="active">Обо мне</a></li>
+          <li><a href="contact.html" class="active">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section container">
+      <h2>Свяжитесь со мной 📬</h2>
+      <p>Вы можете написать мне письмо или оставить сообщение через форму ниже. Я отвечу как можно скорее!</p>
+
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" placeholder="Введите ваш email" required />
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Введите ваше сообщение" required></textarea>
+
+        <button type="submit">Отправить сообщение</button>
+      </form>
+
+      <div class="social-links">
+        <p>Также вы можете найти меня здесь:</p>
+        <a href="mailto:abobabebra@gmail.com">📧 Email</a> |
+        <a href="https://github.com/username" target="_blank">🐙 GitHub</a> |
+        <a href="https://t.me/username" target="_blank">💬 Telegram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>11.11.2025</p>
+  </footer>
+</body>
+</html>
